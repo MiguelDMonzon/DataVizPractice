@@ -2,172 +2,172 @@
 
   <div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Currency info delivery: Divisas tradicionales y criptomonedas.</a></h1>
-					</header>
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1><a href="index.html">Currency info delivery: Divisas tradicionales y criptomonedas.</a></h1>
+    </header>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-bitcoin"></span></div>
-							<h2>Currency info delivery</h2>
-							<p>Información sobre divisas tradicionales y criptomonedas. Desarrollado con <a href="http://html5up.net">HTML5 UP</a>
-              por Miguel David Monzón Fernández-Bermejo.
-              </p>
-						</div>
-					</section>
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <div class="logo"><span class="icon fa-bitcoin"></span></div>
+        <h2>Currency info delivery</h2>
+        <p>Información sobre divisas tradicionales y criptomonedas. Desarrollado con <a href="http://html5up.net">HTML5 UP</a>
+          por Miguel David Monzón Fernández-Bermejo.
+        </p>
+      </div>
+    </section>
 
-          <section id="wrapper">
+    <section id="wrapper">
 
-            <!-- One -->
-            <section id="one" class="wrapper spotlight style1">
-              <div class="inner">
-                <div class="content">
-                  <h2 class="major">Valor del Euro en los últimos 16 años (2000-2016)</h2>
-                  <p>En esta gráfica se visualiza el valor del euro, y para ello, se compara con dos de las divisas más importantes
-                  del mercado actual: el dólar americano (USD) y la libra inglesa (GBP).</p>
-                  <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
-                    <div class="col-md-12">
-                          <nvd3 id="grafico1"
-                                options="main.chart1.options"
-                                data="main.chart1.data">
-                          </nvd3>
-                    </div>
-                  </div>
-                  <br>
-                  <h3>Justificación del gráfico escogido.</h3>
-                  <p>Se ha elegido el gráfico de líneas porque representa correctamente una serie de puntos que tienen tendencias tanto a
-                    incrementar como a decrementar. De un solo vistazo, se pueden ver las tendencias que han tenido los precios relativo
-                    de los dólares y de las libras, aun sin observar cada uno de los datos. También permite una correcta comparación de precios
-                    entre los dólares y las libras de un solo vistazo, cosa que con un diagrama de puntos (scatterplot) no se apreciaría tan bien.
-                  </p>
-                  <h3>Análisis de los datos.</h3>
-                  <p>Como se puede observar, los primeros años del siglo el Euro estaba en sus valores más bajos, llegando a tener menor
-                    valor que el dólar USD, y por supuesto de la libra GBP. Sin embargo, a partir de 2002, el euro vuelve a valer más
-                    que un dólar e incluso casi alcanza a la libra en 2009 (0.96 libras por un euro). Las tendencias indican que en los
-                    siguientes años el euro seguirá cayendo, aunque después del Brexit la especulación es mayor.
-                  </p>
-                  <h3>Fuente de datos escogida.</h3>
-                  <p>La fuente de datos escogida, en un principio, iba a ser la API de valores de divisas fixer.io. Sin embargo, después de varios
-                    problemas, se ha procedido a la realización de un JSON que será importado por el servidor, y servido al lado cliente via API.
-                    El JSON contiene el valor de cada año de las diferentes divisas. Esos valores se han obtenido via API pero manualmente.
-                  </p>
-                </div>
+      <!-- One -->
+      <section id="one" class="wrapper spotlight style1">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Valor del Euro en los últimos 16 años (2000-2016)</h2>
+            <p>En esta gráfica se visualiza el valor del euro, y para ello, se compara con dos de las divisas más importantes
+              del mercado actual: el dólar americano (USD) y la libra inglesa (GBP).</p>
+            <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
+              <div class="col-md-12">
+                <nvd3 id="lineasDivisas"
+                      options="main.lineasDivisas.options"
+                      data="main.lineasDivisas.data">
+                </nvd3>
               </div>
-            </section>
+            </div>
+            <br>
+            <h3>Justificación del gráfico escogido.</h3>
+            <p>Se ha elegido el gráfico de líneas porque representa correctamente una serie de puntos que tienen tendencias tanto a
+              incrementar como a decrementar. De un solo vistazo, se pueden ver las tendencias que han tenido los precios relativo
+              de los dólares y de las libras, aun sin observar cada uno de los datos. También permite una correcta comparación de precios
+              entre los dólares y las libras de un solo vistazo, cosa que con un diagrama de puntos (scatterplot) no se apreciaría tan bien.
+            </p>
+            <h3>Análisis de los datos.</h3>
+            <p>Como se puede observar, los primeros años del siglo el Euro estaba en sus valores más bajos, llegando a tener menor
+              valor que el dólar USD, y por supuesto de la libra GBP. Sin embargo, a partir de 2002, el euro vuelve a valer más
+              que un dólar e incluso casi alcanza a la libra en 2009 (0.96 libras por un euro). Las tendencias indican que en los
+              siguientes años el euro seguirá cayendo, aunque después del Brexit la especulación es mayor.
+            </p>
+            <h3>Fuente de datos escogida.</h3>
+            <p>La fuente de datos escogida, en un principio, iba a ser la API de valores de divisas fixer.io. Sin embargo, después de varios
+              problemas, se ha procedido a la realización de un JSON que será importado por el servidor, y servido al lado cliente via API.
+              El JSON contiene el valor de cada año de las diferentes divisas. Esos valores se han obtenido via API pero manualmente.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <!-- Two -->
-            <section id="two" class="wrapper alt spotlight style2">
-              <div class="inner">
-                <div class="content">
-                  <h2 class="major">Valor actual de las principales criptomonedas</h2>
-                  <p>En el siguiente diagrama se observa el valor actual de cinco de las principales criptomonedas actuales.</p>
-                  <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
-                    <div class="col-md-12">
-                          <nvd3 id="graficoCriptomonedas"
-                                options="main.graficoCriptomonedas.options"
-                                data="main.graficoCriptomonedas.data">
-                          </nvd3>
-                    </div>
-                  </div>
-                  <br>
-                  <h3>Justificación del gráfico escogido.</h3>
-                  <p>La idea principal consiste en mostrar valores estrictos sobre ciertas criptomonedas. Al tener en el eje X diferentes etiquetas
-                    y en el eje Y diferentes valores numéricos, se ha planteado que el mejor gráfico posible es el de barras. Gracias a este diagrama,
-                    se puede realizar una comparación en cuanto a alturas (aunque está limitado cuando las alturas son muy semejantes). Sin embargo,
-                    con los datos existentes la diferencia es bien apreciable.
-                  </p>
-                  <h3>Análisis de los datos.</h3>
-                  <p>El análisis de los datos mostrados es bastante sencillo. Se puede observar que la diferencia en cuanto a valor entre las diferentes
-                    criptomonedas es muy grande, siendo el bitcoin el más grande de todos, seguido por el Ethereum. Si no se tiene en cuenta el bitcoin,
-                    la diferencia entre el resto de criptomonedas no es tan amplia. Otro dato a destacar es que existen criptomonedas como el Ripple (XRP)
-                    que están a 0.28 USD, lo que significa que pueden alcanzar precios bajísimos.
-                  </p>
-                  <h3>Fuente de datos escogida.</h3>
-                  <p>La fuente de datos escogida es la API que ofrece coinmarketcap.com, que permite obtener el último valor (a refrescos de 5 minutos)
-                    de todas las criptomonedas, además de otros valores. De las más de 800 criptomonedas obtenidas, se han elegido estas 5 por su gran
-                    relevancia. Por lo tanto, el gráfico (lado cliente) solicita mediante API al servidor los datos, y éste realiza una petición a la
-                    API de coinmarketcap, para devolver los datos al servidor y este al cliente. De todos los valores posibles, se ha recogido el valor
-                    en USD. Para conseguir que los datos recogidos de la API funcionen, ha sido necesario un preprocesado en el lado del servidor.
-                  </p>
-                </div>
+      <!-- Two -->
+      <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Valor actual de las principales criptomonedas</h2>
+            <p>En el siguiente diagrama se observa el valor actual de cinco de las principales criptomonedas actuales.</p>
+            <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
+              <div class="col-md-12">
+                <nvd3 id="graficoCriptomonedas"
+                      options="main.graficoCriptomonedas.options"
+                      data="main.graficoCriptomonedas.data">
+                </nvd3>
               </div>
-            </section>
+            </div>
+            <br>
+            <h3>Justificación del gráfico escogido.</h3>
+            <p>La idea principal consiste en mostrar valores estrictos sobre ciertas criptomonedas. Al tener en el eje X diferentes etiquetas
+              y en el eje Y diferentes valores numéricos, se ha planteado que el mejor gráfico posible es el de barras. Gracias a este diagrama,
+              se puede realizar una comparación en cuanto a alturas (aunque está limitado cuando las alturas son muy semejantes). Sin embargo,
+              con los datos existentes la diferencia es bien apreciable.
+            </p>
+            <h3>Análisis de los datos.</h3>
+            <p>El análisis de los datos mostrados es bastante sencillo. Se puede observar que la diferencia en cuanto a valor entre las diferentes
+              criptomonedas es muy grande, siendo el bitcoin el más grande de todos, seguido por el Ethereum. Si no se tiene en cuenta el bitcoin,
+              la diferencia entre el resto de criptomonedas no es tan amplia. Otro dato a destacar es que existen criptomonedas como el Ripple (XRP)
+              que están a 0.28 USD, lo que significa que pueden alcanzar precios bajísimos.
+            </p>
+            <h3>Fuente de datos escogida.</h3>
+            <p>La fuente de datos escogida es la API que ofrece coinmarketcap.com, que permite obtener el último valor (a refrescos de 5 minutos)
+              de todas las criptomonedas, además de otros valores. De las más de 800 criptomonedas obtenidas, se han elegido estas 5 por su gran
+              relevancia. Por lo tanto, el gráfico (lado cliente) solicita mediante API al servidor los datos, y éste realiza una petición a la
+              API de coinmarketcap, para devolver los datos al servidor y este al cliente. De todos los valores posibles, se ha recogido el valor
+              en USD. Para conseguir que los datos recogidos de la API funcionen, ha sido necesario un preprocesado en el lado del servidor.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <!-- Three -->
-            <section id="three" class="wrapper spotlight style3">
-              <div class="inner">
-                <div class="content">
-                  <h2 class="major">Cuota de mercado (Market Cap)</h2>
-                  <p>En el siguiente diagrama se muestra la cuota de mercado de las criptomonedas seleccionadas anteriormente.</p>
-                  <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
-                    <div class="col-md-12">
-                          <nvd3 id="graficoMarketCap"
-                                options="main.graficoMarketCap.options"
-                                data="main.graficoMarketCap.data">
-                          </nvd3>
-                    </div>
-                  </div>
-                  <br>
-                  <h3>Justificación del gráfico escogido.</h3>
-                  <p>En este caso se ha realizado un diagrama de sectores, para poder ver la proporción de cada una de las criptomonedas en función de
-                    un total. Es decir, si el mercado consistiese únicamente en esas 5 criptomonedas, ver hasta qué punto se reparte cada una. Esos
-                    porcentajes se reflejarán mejor con un diagrama de sectores. Además, ordena automáticamente de menor a mayor cuota de mercado,
-                    así que si no se aprecia mucho la diferencia (el ser humano no compara bien ángulos), sabiendo qué va antes en el sentido de las
-                    agujas del reloj se puede saber cual es mayor.
-                  </p>
-                  <h3>Análisis de los datos.</h3>
-                  <p>Los datos muestran que la cuota de mercado del bitcoin es apabullante respecto a los demás, siendo más este primero que el conjunto
-                    de las otras 4 criptomonedas. Otra interpretación muy interesante es que, efectivamente, la cuota de mercado no corresponde con el
-                    valor de la moneda. Si bien el Ripple tiene mucha más cuota de mercado que el LiteCoin y el Monero, su precio es muchísimo más bajo.
-                    Esto quiere decir que efectivamente no existe correlación entre ambas características.
-                  </p>
-                  <h3>Fuente de datos escogida.</h3>
-                  <p>La fuente de datos es la misma que en el gráfico anterior, sólo que tiene distinto procesamiento, obteniendo la cuota de mercado
-                    en vez de el valor de la criptomoneda. El transcurso de los datos desde la fuente hasta el cliente es el mismo que el anterior.
-                  </p>
-                </div>
+      <!-- Three -->
+      <section id="three" class="wrapper spotlight style3">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Cuota de mercado (Market Cap)</h2>
+            <p>En el siguiente diagrama se muestra la cuota de mercado de las criptomonedas seleccionadas anteriormente.</p>
+            <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
+              <div class="col-md-12">
+                <nvd3 id="graficoMarketCap"
+                      options="main.graficoMarketCap.options"
+                      data="main.graficoMarketCap.data">
+                </nvd3>
               </div>
-            </section>
+            </div>
+            <br>
+            <h3>Justificación del gráfico escogido.</h3>
+            <p>En este caso se ha realizado un diagrama de sectores, para poder ver la proporción de cada una de las criptomonedas en función de
+              un total. Es decir, si el mercado consistiese únicamente en esas 5 criptomonedas, ver hasta qué punto se reparte cada una. Esos
+              porcentajes se reflejarán mejor con un diagrama de sectores. Además, ordena automáticamente de menor a mayor cuota de mercado,
+              así que si no se aprecia mucho la diferencia (el ser humano no compara bien ángulos), sabiendo qué va antes en el sentido de las
+              agujas del reloj se puede saber cual es mayor.
+            </p>
+            <h3>Análisis de los datos.</h3>
+            <p>Los datos muestran que la cuota de mercado del bitcoin es apabullante respecto a los demás, siendo más este primero que el conjunto
+              de las otras 4 criptomonedas. Otra interpretación muy interesante es que, efectivamente, la cuota de mercado no corresponde con el
+              valor de la moneda. Si bien el Ripple tiene mucha más cuota de mercado que el LiteCoin y el Monero, su precio es muchísimo más bajo.
+              Esto quiere decir que efectivamente no existe correlación entre ambas características.
+            </p>
+            <h3>Fuente de datos escogida.</h3>
+            <p>La fuente de datos es la misma que en el gráfico anterior, sólo que tiene distinto procesamiento, obteniendo la cuota de mercado
+              en vez de el valor de la criptomoneda. El transcurso de los datos desde la fuente hasta el cliente es el mismo que el anterior.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <!-- Four -->
-            <section id="four" class="wrapper alt style1">
-              <div class="inner">
-                <div class="content">
-                  <h2 class="major">Clasificador de divisas</h2>
-                  <p>En el siguiente diagrama se muestra una clasificación (simple) de las diferentes divisas.</p>
-                  <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
-                    <div class="col-md-12">
-                          <nvd3 id="graficoAll"
-                                options="main.graficoAll.options"
-                                data="main.graficoAll.data">
-                          </nvd3>
-                    </div>
-                  </div>
-                  <br>
-                  <h3>Justificación del gráfico escogido.</h3>
-                  <p>Aunque se trate de una clasificación sencilla, puesto que había diferentes "ramas" de la clasificación, se ha optado por utilizar un
-                    Sunburst chart ya que además, en función del número de divisas de cada tipo, aumenta el ángulo de esa clasificación. Si se selecciona
-                    el nivel deseado se expanderá y se observarán los siguientes niveles.
-                  </p>
-                  <h3>Análisis de los datos.</h3>
-                  <p>Poco hay que analizar este gráfico. Lo que se aprecia principalmente es que el número de criptomonedas es muchísimo mayor que el
-                    de las divisas tradicionales. Esto se puede explicar por la facilidad que existe en lanzar una criptodivisa respecto a una divisa
-                    más tradicional. El análisis sería más profundo si para cada divisa se viese el precio en USD, cosa que se ha intentado pero, por
-                    alguna razón que desconozco, no me la muestra.
-                  </p>
-                  <h3>Fuente de datos escogida.</h3>
-                  <p>La fuente de datos, para las criptodivisas, es la misma que en los gráficos anteriores, obteniendo las 50 primeras criptodivisas que
-                    devolvía, ya que en total recogía unas 800 criptodivisas y el gráfico se hacía ilegible. En cambio, para las divisas tradicionales, se
-                    importará un json almacenado para que lo recoja el servidor. Por lo tanto, este gráfico recibe dos fuentes diferentes y las converge
-                    en una misma respuesta. Para cada divisa, se obtiene su valor en dólares USD, para pasarla como size, pero por alguna razón no
-                    funciona y los pone todos a valor 1.
-                  </p>
-                </div>
+      <!-- Four -->
+      <section id="four" class="wrapper alt style1">
+        <div class="inner">
+          <div class="content">
+            <h2 class="major">Clasificador de divisas</h2>
+            <p>En el siguiente diagrama se muestra una clasificación (simple) de las diferentes divisas.</p>
+            <div class="row" style="background-color: rgba(255, 255, 255, 0.87)">
+              <div class="col-md-12">
+                <nvd3 id="graficoAll"
+                      options="main.graficoAll.options"
+                      data="main.graficoAll.data">
+                </nvd3>
               </div>
-            </section>
+            </div>
+            <br>
+            <h3>Justificación del gráfico escogido.</h3>
+            <p>Aunque se trate de una clasificación sencilla, puesto que había diferentes "ramas" de la clasificación, se ha optado por utilizar un
+              Sunburst chart ya que además, en función del número de divisas de cada tipo, aumenta el ángulo de esa clasificación. Si se selecciona
+              el nivel deseado se expanderá y se observarán los siguientes niveles.
+            </p>
+            <h3>Análisis de los datos.</h3>
+            <p>Poco hay que analizar este gráfico. Lo que se aprecia principalmente es que el número de criptomonedas es muchísimo mayor que el
+              de las divisas tradicionales. Esto se puede explicar por la facilidad que existe en lanzar una criptodivisa respecto a una divisa
+              más tradicional. El análisis sería más profundo si para cada divisa se viese el precio en USD, cosa que se ha intentado pero, por
+              alguna razón que desconozco, no me la muestra.
+            </p>
+            <h3>Fuente de datos escogida.</h3>
+            <p>La fuente de datos, para las criptodivisas, es la misma que en los gráficos anteriores, obteniendo las 50 primeras criptodivisas que
+              devolvía, ya que en total recogía unas 800 criptodivisas y el gráfico se hacía ilegible. En cambio, para las divisas tradicionales, se
+              importará un json almacenado para que lo recoja el servidor. Por lo tanto, este gráfico recibe dos fuentes diferentes y las converge
+              en una misma respuesta. Para cada divisa, se obtiene su valor en dólares USD, para pasarla como size, pero por alguna razón no
+              funciona y los pone todos a valor 1.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          </section>
-    </div>
+    </section>
+  </div>
 </div>

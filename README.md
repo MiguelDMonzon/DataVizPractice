@@ -9,7 +9,7 @@ Esta práctica consistirá en dos partes: app cliente (con Angular.js) y servido
   npm i
   npm run serve
 
-  # Open your browser at: http://localhost:3000
+  # Abrir el navegador en: http://localhost:3000
 ```
 
 # Para arrancar el servidor:
@@ -20,3 +20,5 @@ Esta práctica consistirá en dos partes: app cliente (con Angular.js) y servido
   npm i cors
   node index
 ```
+
+El servidor se mantendrá a la escucha en localhost:7001
