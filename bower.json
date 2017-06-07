@@ -1,0 +1,23 @@
+{
+  "name": "fountain-inject",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-ui-router": "1.0.0-beta.3",
+    "angular-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "moment": "~2.10.6",
+    "lodash": "^4.13.1",
+    "jmespath.js": "^0.15.0",
+    "bootstrap-sass": "3.2.0",
+    "bootswatch-scss": "3.2.0",
+    "font-awesome": "4.7.0",
+    "d3": "3",
+    "nvd3": "1.8",
+    "angular-nvd3": "^1.0.9"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.2"
+  }
+}
